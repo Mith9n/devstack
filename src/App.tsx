@@ -1,18 +1,33 @@
-import { ToastContainer } from "react-toastify";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Technologies from "./components/Technologies";
+import { lazy, Suspense } from "react";
 
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+const Technologies = lazy(() => import("./components/Technologies"));
 
 function App() {
   return (
     <div className="min-h-screen bg-white text-slate-900">
       <Navbar />
+
       <Hero />
+
       <main>
-        <Technologies />
+        <Suspense
+          fallback={
+            <div className="flex min-h-[300px] items-center justify-center">
+              <div className="h-8 w-8 animate-spin rounded-full border-4 border-slate-200 border-t-purple-600" />
+            </div>
+          }
+        >
+          <Technologies />
+        </Suspense>
       </main>
-    <ToastContainer
+
+      <ToastContainer
         position="bottom-right"
         autoClose={2000}
         hideProgressBar={false}
