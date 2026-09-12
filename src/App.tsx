@@ -1,5 +1,6 @@
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Technologies from "./components/Technologies";
 
 
 function App() {
@@ -7,6 +8,9 @@ function App() {
     <div className="min-h-screen bg-white text-slate-900">
       <Navbar />
       <Hero />
+      <main>
+        <Technologies />
+      </main>
     </div>
   );
 }
