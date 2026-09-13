@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white">
       <nav className="mx-auto flex h-[78px] max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        {/* Left Side:  Logo  */}
+        {/* Left  Logo  */}
         <a href="#home" className="flex items-center">
           <img
             src={logo}

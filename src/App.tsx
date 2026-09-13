@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Footer from "./components/Footer";
 
 const Technologies = lazy(() => import("./components/Technologies"));
 
@@ -12,9 +13,7 @@ function App() {
   return (
     <div className="min-h-screen bg-white text-slate-900">
       <Navbar />
-
       <Hero />
-
       <main>
         <Suspense
           fallback={
@@ -26,7 +25,7 @@ function App() {
           <Technologies />
         </Suspense>
       </main>
-
+      <Footer />
       <ToastContainer
         position="bottom-right"
         autoClose={2000}
