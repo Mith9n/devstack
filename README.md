@@ -46,9 +46,8 @@ A unique key helps React identify each item and update the list efficiently when
 
 Conditional rendering means showing different UI based on a condition. I used it to show the empty stack message when no technology is selected.
 
-<!-- 
 {selected_technologies.length === 0 ? (
   <p>No technologies selected yet.</p>
 ) : (
   <SelectedTechnologies />
-)} -->
+)} 
