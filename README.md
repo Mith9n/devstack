@@ -1,26 +1,3 @@
-# Folder Structure
-
-src/
-│
-├── assets/
-│   ├── banner-stack.png
-│   ├── logo-text.png
-│   └── hamburger.png
-│
-├── components/
-│   ├── Navbar.tsx
-│   ├── Hero.tsx
-│   ├── Technologies.tsx
-│   └── Footer.tsx
-│
-├── data/
-│   └── technologies.json
-│
-├── App.tsx
-├── App.css
-├── index.css
-└── main.tsx
-
 # Project Name : Dev Stack
 
 Dev Stack is a responsive technology explorer website where users can explore different development technologies and build their own stack.
